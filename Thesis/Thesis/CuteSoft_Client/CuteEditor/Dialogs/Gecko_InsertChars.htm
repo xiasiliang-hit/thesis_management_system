@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>[[InsertChars]] </title>		
+		<meta name="content-type" content="text/html ;charset=Unicode" />
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.1)" />
+		<meta http-equiv="Page-Exit" content="blendTrans(Duration=0.1)" />
+		<link href='Load.ashx?type=themecss&file=dialog.css&theme=[[_Theme_]]' type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1002&file=DialogHead.js"></script>
+		<script type="text/javascript" src="Load.ashx?type=dialogscript&verfix=1002&file=DialogHead.js"></script>
+		<script type="text/javascript">
+		
+			var OxO5c85=["","\x3Ctr\x3E","\x3Ctd style=\x27height: 20; font-size: 12px; \x27 bgcolor=white width=\x2718\x27 onClick=\x27getchar(this)\x27 onmouseover=\x27spcOver(this)\x27 onmouseout=\x27spcOut(this)\x27 title=\x27","\x27 \x3E","\x26#",";","\x3C/td\x3E","\x3C/tr\x3E","background","style","#0A246A","color","white","black","Verdana","innerHTML","Unicode","\x3CFONT CLASS=\x27UNICODE\x27\x3E","\x3Cspan style=\x27font-family:","\x27\x3E","\x3C/span\x3E"];var editor=Window_GetDialogArguments(window);function Close(){Window_CloseDialog(window);} ;var tds=22;function writeChars(){var Ox24=OxO5c85[0];for(var i=33;i<256;){document.write(OxO5c85[1]);for(var j=0;j<=tds;j++){document.write(OxO5c85[2]+i+OxO5c85[3]);document.write(OxO5c85[4]+i+OxO5c85[5]);document.write(OxO5c85[6]);i++;} ;document.write(OxO5c85[7]);} ;} ;function spcOver(Ox27){Ox27[OxO5c85[9]][OxO5c85[8]]=OxO5c85[10];Ox27[OxO5c85[9]][OxO5c85[11]]=OxO5c85[12];} ;function spcOut(Ox27){Ox27[OxO5c85[9]][OxO5c85[8]]=OxO5c85[12];Ox27[OxO5c85[9]][OxO5c85[11]]=OxO5c85[13];} ;function getchar(obj){var Ox2b;var Ox2c=getFontValue()||OxO5c85[14];if(!obj[OxO5c85[15]]){return ;} ;Ox2b=obj[OxO5c85[15]];if(Ox2c==OxO5c85[16]){Ox2b=OxO5c85[17]+obj[OxO5c85[15]]+OxO5c85[0];} else {if(Ox2c!=OxO5c85[14]){Ox2b=OxO5c85[18]+Ox2c+OxO5c85[19]+obj[OxO5c85[15]]+OxO5c85[20];} ;} ;editor.PasteHTML(Ox2b);Window_CloseDialog(window);} ;
+		</script>
+	</head>
+	<body>
+			<table border="0" cellspacing="2" cellpadding="2" width="99%" id="Table1">
+				<tr >
+					<td class="normal">
+						[[FontName]]: 
+						<input type="radio" onchange="sel_font_change()" id="selfont1" name="selfont" value="" checked="checked" />
+						<label for="selfont1">[[Default]]</label> 
+						<!--
+						<input type="radio" onchange="sel_font_change()" id="selfont2" name="selfont" value="webdings" />
+						<label for="selfont2">Webdings</label>
+						<input type="radio" onchange="sel_font_change()" id="selfont3" name="selfont" value="wingdings" />
+						<label for="selfont3">Wingdings</label>
+						<input type="radio" onchange="sel_font_change()" id="selfont4" name="selfont" value="symbol" />
+						<label for="selfont4">Symbol</label>
+						-->
+						<input type="radio" onchange="sel_font_change()" id="selfont5" name="selfont" value="Unicode" />
+						<label for="selfont5">Unicode</label>
+						<script type="text/javascript">
+						var OxO513a=["selfont","length","checked","value","Verdana","display","style","charstable1","Unicode","block","none","charstable2","fontFamily"];function getFontValue(){var Ox2f=document.getElementsByName(OxO513a[0]);for(var i=0;i<Ox2f[OxO513a[1]];i++){if(Ox2f[i][OxO513a[2]]){return Ox2f[i][OxO513a[3]];} ;} ;} ;function sel_font_change(){var Ox31=getFontValue()||OxO513a[4];document.getElementById(OxO513a[7])[OxO513a[6]][OxO513a[5]]=(Ox31!=OxO513a[8]?OxO513a[9]:OxO513a[10]);document.getElementById(OxO513a[11])[OxO513a[6]][OxO513a[5]]=(Ox31==OxO513a[8]?OxO513a[9]:OxO513a[10]);document.getElementById(OxO513a[7])[OxO513a[6]][OxO513a[12]]=Ox31;if(Ox31==OxO513a[8]){} ;} ;
+						</script>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<fieldset>
+							<legend>
+								[[InsertChars]]
+							</legend>
+							<br />
+							<table id="charstable1" width="95%" cellspacing="1" cellpadding="1" border="0"
+								 style="FONT-FAMILY: Verdana; background-color:#696969; border-color:#696969; height:222">
+								<script type="text/javascript">
+								var OxO8260=[];writeChars();
+								</script>
+							</table>
+							<table id="charstable2" width="95%" cellspacing="1" cellpadding="1" border="0"
+								style="FONT-FAMILY: Verdana; background-color:#696969; border-color:#696969;display:none; height:222">
+								<script type="text/javascript">
+								var OxOad4d=["\x26#402;","\x26#913;","\x26#914;","\x26#915;","\x26#916;","\x26#917;","\x26#918;","\x26#919;","\x26#920;","\x26#921;","\x26#922;","\x26#923;","\x26#924;","\x26#925;","\x26#926;","\x26#927;","\x26#928;","\x26#929;","\x26#931;","\x26#932;","\x26#933;","\x26#934;","\x26#935;","\x26#936;","\x26#937;","\x26#945;","\x26#946;","\x26#947;","\x26#948;","\x26#949;","\x26#950;","\x26#951;","\x26#952;","\x26#953;","\x26#954;","\x26#955;","\x26#956;","\x26#957;","\x26#958;","\x26#959;","\x26#960;","\x26#961;","\x26#962;","\x26#963;","\x26#964;","\x26#965;","\x26#966;","\x26#967;","\x26#968;","\x26#969;","\x26#977;","\x26#978;","\x26#982;","\x26#8226;","\x26#8230;","\x26#8242;","\x26#8243;","\x26#8254;","\x26#8260;","\x26#8472;","\x26#8465;","\x26#8476;","\x26#8482;","\x26#8501;","\x26#8592;","\x26#8593;","\x26#8594;","\x26#8595;","\x26#8596;","\x26#8629;","\x26#8656;","\x26#8657;","\x26#8658;","\x26#8659;","\x26#8660;","\x26#8704;","\x26#8706;","\x26#8707;","\x26#8709;","\x26#8711;","\x26#8712;","\x26#8713;","\x26#8715;","\x26#8719;","\x26#8722;","\x26#8727;","\x26#8730;","\x26#8733;","\x26#8734;","\x26#8736;","\x26#8869;","\x26#8870;","\x26#8745;","\x26#8746;","\x26#8747;","\x26#8756;","\x26#8764;","\x26#8773;","\x26#8800;","\x26#8801;","\x26#8804;","\x26#8805;","\x26#8834;","\x26#8835;","\x26#8836;","\x26#8838;","\x26#8839;","\x26#8853;","\x26#8855;","\x26#8901;","\x26#8968;","\x26#8969;","\x26#8970;","\x26#8971;","\x26#9001;","\x26#9002;","\x26#9674;","\x26#9824;","\x26#9827;","\x26#9829;","\x26#9830;","length","\x3Ctr\x3E","\x3Ctd style=\x27height: 20; font-size: 12px; \x27 bgcolor=white width=\x2718\x27 onClick=\x27getchar(this)\x27 onmouseover=\x27spcOver(this)\x27 onmouseout=\x27spcOut(this)\x27 title=\x27"," - ","\x26","\x26amp;","\x27 \x3E","\x3C/td\x3E","\x3C/tr\x3E"];var arr=[OxOad4d[0],OxOad4d[1],OxOad4d[2],OxOad4d[3],OxOad4d[4],OxOad4d[5],OxOad4d[6],OxOad4d[7],OxOad4d[8],OxOad4d[9],OxOad4d[10],OxOad4d[11],OxOad4d[12],OxOad4d[13],OxOad4d[14],OxOad4d[15],OxOad4d[16],OxOad4d[17],OxOad4d[18],OxOad4d[19],OxOad4d[20],OxOad4d[21],OxOad4d[22],OxOad4d[23],OxOad4d[24],OxOad4d[25],OxOad4d[26],OxOad4d[27],OxOad4d[28],OxOad4d[29],OxOad4d[30],OxOad4d[31],OxOad4d[32],OxOad4d[33],OxOad4d[34],OxOad4d[35],OxOad4d[36],OxOad4d[37],OxOad4d[38],OxOad4d[39],OxOad4d[40],OxOad4d[41],OxOad4d[42],OxOad4d[43],OxOad4d[44],OxOad4d[45],OxOad4d[46],OxOad4d[47],OxOad4d[48],OxOad4d[49],OxOad4d[50],OxOad4d[51],OxOad4d[52],OxOad4d[53],OxOad4d[54],OxOad4d[55],OxOad4d[56],OxOad4d[57],OxOad4d[58],OxOad4d[59],OxOad4d[60],OxOad4d[61],OxOad4d[62],OxOad4d[63],OxOad4d[64],OxOad4d[65],OxOad4d[66],OxOad4d[67],OxOad4d[68],OxOad4d[69],OxOad4d[70],OxOad4d[71],OxOad4d[72],OxOad4d[73],OxOad4d[74],OxOad4d[75],OxOad4d[76],OxOad4d[77],OxOad4d[78],OxOad4d[79],OxOad4d[80],OxOad4d[81],OxOad4d[82],OxOad4d[83],OxOad4d[84],OxOad4d[84],OxOad4d[85],OxOad4d[86],OxOad4d[87],OxOad4d[88],OxOad4d[89],OxOad4d[90],OxOad4d[91],OxOad4d[92],OxOad4d[93],OxOad4d[94],OxOad4d[95],OxOad4d[96],OxOad4d[97],OxOad4d[97],OxOad4d[98],OxOad4d[99],OxOad4d[100],OxOad4d[101],OxOad4d[102],OxOad4d[103],OxOad4d[104],OxOad4d[105],OxOad4d[106],OxOad4d[107],OxOad4d[108],OxOad4d[90],OxOad4d[109],OxOad4d[110],OxOad4d[111],OxOad4d[112],OxOad4d[113],OxOad4d[114],OxOad4d[115],OxOad4d[116],OxOad4d[117],OxOad4d[118],OxOad4d[119],OxOad4d[120]];for(var i=0;i<arr[OxOad4d[121]];i+=tds){document.write(OxOad4d[122]);for(var j=i;j<i+tds&&j<arr[OxOad4d[121]];j++){var n=arr[j];document.write(OxOad4d[123]+n+OxOad4d[124]+n.replace(OxOad4d[125],OxOad4d[126])+OxOad4d[127]);document.write(n);document.write(OxOad4d[128]);} ;document.write(OxOad4d[129]);} ;
+								</script>
+							</table>
+							<br />	
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<input type="button" value="[[Cancel]]" class="formbutton" onclick="Close()" ID="Button1" NAME="Button1"/>
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MMasterPage.master.cs" Inherits="SMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script type="text/javascript">
+    var UID="081110101";
+    var add = top.location;
+    add = add.toString();
+    var playerIndex = add.indexOf("?UID=");
+    var showParam=""
+    if (playerIndex != -1) 
+    {
+        showParam= unescape(add.substring(playerIndex + 5, add.length));
+    }
+    UID=showParam;
+</script> 
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<title>SIMS</title> 
+<meta name="author" content="Ace" />
+<link rel="shortcut icon" href="/favicon.png" />  
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 222px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <form id="form1" runat="server">
+   <div id="container">
+
+	<div id="header">
+
+	
+		
+	</div>
+	
+	
+<div id="navigation">
+<div id="tabs3">
+                        <ul>
+                                <!-- CSS Tabs -->
+<li><a href="#"><span>&#39318;&#39029;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Basicinfo/default.aspx?uid=' + UID"><span id="span1">
+    &#22522;&#26412;&#20449;&#24687;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Scores/default.aspx?uid=' + UID"><span>
+    &#25104;&#32489;&#20449;&#24687;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Party/default.aspx?uid=' + UID"><span>
+    &#23398;&#29983;&#20826;&#24314;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Internship/default.aspx?uid=' + UID"><span>
+    &#27966;&#36963;&#23454;&#20064;</span></a></li>
+<li id="current"><a href= "" onclick= "JavaScript:this.href= '../manager/addmessage.aspx?uid=' + UID"><span>
+    &#27605;&#19994;&#31572;&#36777;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../FamilyInfo/default.aspx?uid=' + UID"><span>
+    &#23478;&#24237;&#20449;&#24687;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../MutualEvaluation/default.aspx?uid=' + UID"><span>
+    &#23398;&#29983;&#20114;&#35780;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../ExteraPoints/default.aspx?uid=' + UID"><span>
+    &#32032;&#36136;&#21152;&#20998;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Announcement/default.aspx?uid=' + UID"><span>
+    &#36890;&#30693;&#36890;&#21578;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Career/default.aspx?uid=' + UID"><span>
+    &#23601;&#19994;&#32479;&#35745;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Tutor/default.aspx?uid=' + UID"><span>
+    &#23548;&#24072;&#30003;&#25253;</span></a></li>
+<li><a href= "" onclick= "JavaScript:this.href= '../Manage/default.aspx?uid=' + UID"><span>
+    &#31995;&#32479;&#31649;&#29702;</span></a></li>
+</ul>
+    </div></div>
+
+
+    <div id="main">
+
+	
+	    <table class="style1">
+            <tr>
+                <td class="style2">
+                    <asp:TreeView ID="TreeView1" runat="server" 
+                        onselectednodechanged="TreeView1_SelectedNodeChanged" 
+                        ontreenodecheckchanged="TreeView1_TreeNodeCheckChanged">
+                        <Nodes>
+<%--<asp:TreeNode Text="&#26597;&#30475;&#23548;&#24072;&#20449;&#24687;" Value="&#26597;&#30475;&#23548;&#24072;&#20449;&#24687;" 
+                                NavigateUrl= "" onclick= "JavaScript:this.href= '~/manager/ViewTutorInfo.aspx?uid=' + UID"></asp:TreeNode>
+                               --%>
+                            <asp:TreeNode Text="&#26597;&#30475;&#25311;&#39064;&#21644;&#36873;&#39064;" Value="&#26597;&#30475;&#25311;&#39064;&#21644;&#36873;&#39064;">
+                                <asp:TreeNode Text="&#26597;&#30475;&#35770;&#25991;&#25311;&#39064;" Value="&#26597;&#30475;&#35770;&#25991;&#25311;&#39064;" 
+                                    NavigateUrl="~/manager/ViewPTSubmit.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="&#26597;&#30475;&#36873;&#39064;&#24773;&#20917;" Value="&#26597;&#30475;&#36873;&#39064;&#24773;&#20917;" 
+                                    NavigateUrl="~/manager/ViewPTSelect.aspx"></asp:TreeNode>
+                            </asp:TreeNode>
+                            
+                            <asp:TreeNode Text="&#36890;&#30693;&#20844;&#21578;&#21457;&#24067;&#31649;&#29702;" Value="&#36890;&#30693;&#20844;&#21578;&#21457;&#24067;&#31649;&#29702;">
+                                <asp:TreeNode NavigateUrl="~/manager/AddNotice.aspx" Text="&#21457;&#24067;&#36890;&#30693;" Value="&#21457;&#24067;&#36890;&#30693;">
+                                </asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="~/manager/ManageNotice.aspx" Text="&#31649;&#29702;&#36890;&#30693;" 
+                                    Value="&#31649;&#29702;&#36890;&#30693;"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="&#25104;&#32489;&#24405;&#20837;" Value="&#25104;&#32489;&#24405;&#20837;" NavigateUrl="~/manager/InputScore.aspx"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/manager/ExportPaper.aspx" Text="&#23548;&#20986;&#20840;&#37096;&#35770;&#25991;" 
+                                Value="&#23548;&#20986;&#20840;&#37096;&#35770;&#25991;"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/manager/ViewMessage.aspx" Text="&#30041;&#35328;&#31649;&#29702;" Value="&#30041;&#35328;&#31649;&#29702;">
+                                <asp:TreeNode NavigateUrl="~/manager/AddMessage.aspx" Text="添加留言" Value="添加留言">
+                                </asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="~/manager/ViewMessage.aspx" Text="查看留言" Value="查看留言">
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+
+	
+	</div>
+	
+	
+<div id="footer2">
+	<center>
+	    Copyrights © &#21704;&#23572;&#28392;&#24037;&#19994;&#22823;&#23398;&#65288;&#23041;&#28023;&#65289;&#36719;&#20214;&#23398;&#38498; </center>	
+  </div> 
+	</div>
+    </form>
+</body>
+</html>
